@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="all">
+        <div id="text">
+            <div class="result" [innerHTML]="numberu"></div>
+            <div class="written" [innerHTML]="numberd"></div>
+        </div>
+        <div>
+            <button [disabled]="error" value="percentx" (click)="show($event)" class="button" id="percent">&percnt;</button>
+            <button value="ce" (click)="show($event)" class="button" id="ce">CE</button>
+            <button value="c" (click)="show($event)" class="button" id="c">C</button>
+            <button [disabled]="error" value="delete" (click)="show($event)" class="button" id="back">&#9003;</button>
+            <button [disabled]="error" value="dividebyx" (click)="show($event)" class="button">1/𝑥</button>
+            <button [disabled]="error" value="powx" (click)="show($event)" class="button">𝑥²</button>
+            <button [disabled]="error" value="rootx" (click)="show($event)" class="button">√𝑥</button>
+            <button [disabled]="error" value="divide" (click)="show($event)" class="button">&divide;</button>
+            <button value="7" (click)="show($event)" class="button numbers">7</button>
+            <button value="8" (click)="show($event)" class="button numbers">8</button>
+            <button value="9" (click)="show($event)" class="button numbers">9</button>
+            <button [disabled]="error" value="times" (click)="show($event)" class="button">&times;</button>
+            <button value="4" (click)="show($event)" class="button numbers">4</button>
+            <button value="5" (click)="show($event)" class="button numbers">5</button>
+            <button value="6" (click)="show($event)" class="button numbers">6</button>
+            <button [disabled]="error" value="minus" (click)="show($event)" class="button">&minus;</button>
+            <button value="1" (click)="show($event)" class="button numbers">1</button>
+            <button value="2" (click)="show($event)" class="button numbers">2</button>
+            <button value="3" (click)="show($event)" class="button numbers">3</button>
+            <button [disabled]="error" value="plus" (click)="show($event)" class="button">+</button>
+            <button [disabled]="error" value="negatex" (click)="show($event)" class="button numbers negate">+/-</button>
+            <button value="0" (click)="show($event)" class="button numbers">0</button>
+            <button [disabled]="error" value="." (click)="show($event)" class="button numbers">.</button>
+            <button value="equal" (click)="show($event)" class="button equal">&equals;</button>
+        </div>
+    </div>
+</body>
+</html>
+
